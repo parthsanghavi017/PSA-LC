@@ -11,12 +11,37 @@ Psoriatic Arthropathy (PsA) is an autoimmune condition characterized by chronic 
 ### 1. Data Acquisition
 Four datasets will be sourced from the Gene Expression Omnibus (GEO) database:
 - **PsA Datasets**:
-  - GSE130073: Includes synovial tissue samples from 20 PsA patients and 15 healthy controls (HC).
-  - GSE95065: Comprises peripheral blood mononuclear cell (PBMC) samples from 30 PsA patients and 25 HC for external validation.
+  - GSE61281: Includes synovial tissue samples from 20 PsA patients and 12 healthy controls (HC).
+  - GSE205748: Comprises peripheral blood mononuclear cell (PBMC) samples from 22 PsA patients and 9 HC for external validation.
+  - GSE179800: Includes synovial tissue samples from 5 PsA patients and 5 healthy controls (HC).
+    
 - **Long Covid Datasets**:
-  - GSE163211: Includes PBMC samples from 25 Long Covid patients and 20 HC.
-  - GSE171110: Comprises blood samples from 40 Long Covid patients and 30 HC for external validation.
+  - GSE224615: Includes PBMC samples from 27 Long Covid patients and 16 HC.
+  - GSE251849: Comprises blood samples from 12 Long Covid patients and 7 HC for external validation.
+  - GSE225942: Comprises blood samples from 28 Long Covid patients and 10 HC for external validation.
 Details of the datasets, including sample sizes and tissue types, will be summarized in a table.
+
+### Psoriatic Arthritis Datasets
+
+| Accession ID | Description | Number of Healthy | Number of Diseased |
+|--------------|-------------|-------------------|--------------------|
+| GSE61281     | Human Whole Blood: Psoriatic Arthritis [PsA] vs. Cutaneous Psoriasis Without Arthritis [PsC] vs. Controls | 12 | 20 |
+| GSE205748    | Bulk RNA-seq of human skin biopsy for healthy controls, psoriatic arthritis lesions and psoriatic arthritis uninvolved | 9 | 22 |
+| GSE179800    | Human neutrophils isolated from peripheral blood samples (PsA pre-/post-SKB and healthy controls), RNA-seq | 5 | 5 |
+
+### Psoriasis Datasets
+
+| Accession ID | Description | Number of Healthy | Number of Diseased |
+|--------------|-------------|-------------------|--------------------|
+| GSE54456     | 92 psoriatic and 82 normal skin samples | 82 | 92 |
+
+### Long Covid Datasets
+
+| Accession ID | Description | Number of Healthy | Number of Diseased |
+|--------------|-------------|-------------------|--------------------|
+| GSE224615    | RNA-seq on blood samples from LC and non-LC participants (LIINC cohort) | 16 | 27 |
+| GSE251849    | RNA-seq on PBMCs from unaffected controls, recovered, and Long COVID patients (with/without brain fog) | 7 | 12 |
+| GSE225942    | TCR-sequencing of genomic DNA from Neuro-PASC and COVID convalescent controls | 10 | 28 |
 
 <Pending>
 
