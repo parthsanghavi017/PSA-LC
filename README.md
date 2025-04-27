@@ -25,7 +25,6 @@ Details of the datasets, including sample sizes and tissue types, will be summar
 
 | Accession ID | Description | Number of Healthy | Number of Diseased |
 |--------------|-------------|-------------------|--------------------|
-| GSE61281     | Human Whole Blood: Psoriatic Arthritis [PsA] vs. Cutaneous Psoriasis Without Arthritis [PsC] vs. Controls | 12 | 20 |
 | GSE205748    | Bulk RNA-seq of human skin biopsy for healthy controls, psoriatic arthritis lesions and psoriatic arthritis uninvolved | 9 | 22 |
 | GSE179800    | Human neutrophils isolated from peripheral blood samples (PsA pre-/post-SKB and healthy controls), RNA-seq | 5 | 5 |
 
@@ -41,7 +40,6 @@ Details of the datasets, including sample sizes and tissue types, will be summar
 |--------------|-------------|-------------------|--------------------|
 | GSE224615    | RNA-seq on blood samples from LC and non-LC participants (LIINC cohort) | 16 | 27 |
 | GSE251849    | RNA-seq on PBMCs from unaffected controls, recovered, and Long COVID patients (with/without brain fog) | 7 | 12 |
-| GSE225942    | TCR-sequencing of genomic DNA from Neuro-PASC and COVID convalescent controls | 10 | 28 |
 
 <Pending>
 
