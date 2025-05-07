@@ -8,7 +8,7 @@ Psoriatic Arthropathy (PsA) is an autoimmune condition characterized by chronic 
 
 ## Methods
 
-### 1. Data Acquisition
+### 1. Data Acquisition (Week 1 - 03/May)
 Four datasets will be sourced from the Gene Expression Omnibus (GEO) database:
 - **PsA Datasets**:
   - GSE61281: Includes synovial tissue samples from 20 PsA patients and 12 healthy controls (HC).
@@ -43,25 +43,25 @@ Details of the datasets, including sample sizes and tissue types, will be summar
 
 <Pending>
 
-### 2. Identification of Differentially Expressed Genes (DEGs)
+### 2. Identification of Differentially Expressed Genes (DEGs) (Week 2-3)
 The “limma” R package will be used to identify DEGs in GSE130073 (PsA) and GSE163211 (Long Covid) by comparing patient samples to HC. DEGs will be selected based on criteria of |log2 FC| ≥ 1 and adjusted p-value < 0.05. Volcano plots and heatmaps, generated using the “ggplot2” package, will visualize DEGs, highlighting the top 25 genes for each condition.
 
-### 3. Weighted Gene Co-expression Network Analysis (WGCNA)
+### 3. Weighted Gene Co-expression Network Analysis (WGCNA) (Week 4)
 WGCNA will be applied to identify co-expressed gene modules associated with PsA and Long Covid. The top 25% of genes with the highest variance will be selected. The `goodSamplesGenes` function will filter out ineligible genes and samples, and a scale-free network will be constructed using the `pickSoftThreshold` function to determine optimal soft power β. Dynamic tree-cutting will identify gene modules, which will be correlated with clinical traits (e.g., joint inflammation in PsA, fatigue in Long Covid). Overlapping genes between PsA and Long Covid modules and DEGs will be visualized using a Venn diagram on a bioinformatics platform.
 
-### 4. Functional Enrichment Analysis
+### 4. Functional Enrichment Analysis (Week 4)
 Gene Set Enrichment Analysis (GSEA) will be performed using the “clusterProfiler” package (version 4.8.2) to identify enriched KEGG pathways in PsA and Long Covid. Additionally, GO and KEGG enrichment analyses will be conducted on the Metascape platform to elucidate biological roles of co-expressed genes, with a significance threshold of p < 0.01. Results will be visualized using Sankey dot pathway enrichment diagrams.
 
-### 5. Construction of Protein-Protein Interaction (PPI) Network and Hub Gene Identification
+### 5. Construction of Protein-Protein Interaction (PPI) Network and Hub Gene Identification (Week 4)
 PPI networks for shared genes will be constructed using the STRING platform, with an interaction score threshold > 0.4. Networks will be visualized in Cytoscape, and the cytoHubba plugin will identify hub genes based on maximal clique centrality measures, highlighting highly connected nodes critical to disease mechanisms.
 
-### 6. Machine Learning for Screening Key Genes and Validation
+### 6. Machine Learning for Screening Key Genes and Validation (Week 5-6)
 Machine learning will be employed to identify and validate key genes:
 - **LASSO Regression**: To perform LASSO logistic regression on GSE130073 and GSE163211 to select predictive genes, using the smallest lambda value for optimal disease prediction.
 - **Support Vector Machine-Recursive Feature Elimination (SVM-RFE)**: SVM-RFE will iteratively eliminate less informative genes based on five-fold cross-validation to identify critical genes.
 - **Validation**: Identified genes will be validated using independent datasets (GSE95065 for PsA, GSE171110 for Long Covid). Receiver Operating Characteristic (ROC) curves, generated with the “pROC” package, will assess diagnostic accuracy. Nomographs and calibration curves, constructed using the “rms” package, will evaluate predictive capability. Box plots, created with “ggplot2”, will visualize expression levels of diagnostic genes, with statistical significance denoted as *p < 0.05 and **p < 0.01.
 
-### 7. Immune Infiltration Analysis
+### 7. Immune Infiltration Analysis (Week 7)
 Yet to explore
 
 ## Application of Machine Learning
